@@ -1,0 +1,106 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 4 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Update
+└── /tmp/lambda2an2r5cu/.iambic/repos/resources/aws/iam/role/all_accounts/iambic
+    spokerole.yaml
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:policy_document // base_permissions
+    │       └── inline_policies:
+    │           +(Add)
+    │           [
+    │             "2012-10-17",
+    │             [
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "iam:*",
+    │                   "identitystore:*",
+    │                   "organizations:describe*",
+    │                   "organizations:list*",
+    │                   "secretsmanager:CreateSecret",
+    │                   "sso:*"
+    │                 ],
+    │                 "Resource": [
+    │                   "*"
+    │                 ]
+    │               }
+    │             ]
+    │           ]
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:policy_document // base_permissions
+    │       └── inline_policies:
+    │           +(Add)
+    │           [
+    │             "2012-10-17",
+    │             [
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "iam:*",
+    │                   "identitystore:*",
+    │                   "organizations:describe*",
+    │                   "organizations:list*",
+    │                   "secretsmanager:CreateSecret",
+    │                   "sso:*"
+    │                 ],
+    │                 "Resource": [
+    │                   "*"
+    │                 ]
+    │               }
+    │             ]
+    │           ]
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:policy_document // base_permissions
+    │       └── inline_policies:
+    │           +(Add)
+    │           [
+    │             "2012-10-17",
+    │             [
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "iam:*",
+    │                   "identitystore:*",
+    │                   "organizations:describe*",
+    │                   "organizations:list*",
+    │                   "secretsmanager:CreateSecret",
+    │                   "sso:*"
+    │                 ],
+    │                 "Resource": [
+    │                   "*"
+    │                 ]
+    │               }
+    │             ]
+    │           ]
+    └── iambic_test_spoke_account_2 - (192455039954)
+        └── aws:policy_document // base_permissions
+            └── inline_policies:
+                +(Add)
+                [
+                  "2012-10-17",
+                  [
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "iam:*",
+                        "identitystore:*",
+                        "organizations:describe*",
+                        "organizations:list*",
+                        "secretsmanager:CreateSecret",
+                        "sso:*"
+                      ],
+                      "Resource": [
+                        "*"
+                      ]
+                    }
+                  ]
+                ]
