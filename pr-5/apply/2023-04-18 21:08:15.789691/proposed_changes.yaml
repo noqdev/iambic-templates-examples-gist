@@ -1,0 +1,37 @@
+IAMbic Summary
+
+Change Detection
+
+* 2 distinct actions.
+* 2 templates with changes.
+* 4 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdabjo0ft_a/.iambic/repos/resources/aws/iam/user/all_accounts/accoun
+    t_name_cloudwatch_log_reader.yaml
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:iam:user // iambic_test_spoke_account_1_cloudwatch_log_reader
+    ├── iambic_test_spoke_account_2 - (192455039954)
+    │   └── aws:iam:user // iambic_test_spoke_account_2_cloudwatch_log_reader
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:iam:user // iambic_test_spoke_account_3_cloudwatch_log_reader
+    └── iambic_test_org_account - (580605962305)
+        └── aws:iam:user // iambic_test_org_account_cloudwatch_log_reader
+Attach
+└── /tmp/lambdabjo0ft_a/.iambic/repos/resources/aws/iam/user/all_accounts/accoun
+    t_name_cloudwatch_log_reader.yaml
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/CloudWatchApplicationInsightsReadOnlyAccess
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/CloudWatchApplicationInsightsReadOnlyAccess
+    ├── iambic_test_spoke_account_2 - (192455039954)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/CloudWatchApplicationInsightsReadOnlyAccess
+    └── iambic_test_spoke_account_3 - (333972133479)
+        └── aws:policy_document // 
+            arn:aws:iam::aws:policy/CloudWatchApplicationInsightsReadOnlyAccess
