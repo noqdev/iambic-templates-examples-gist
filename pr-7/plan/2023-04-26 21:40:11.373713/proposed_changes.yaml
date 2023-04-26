@@ -1,0 +1,135 @@
+IAMbic Summary
+
+Change Detection
+
+* 4 distinct actions.
+* 4 templates with changes.
+* 4 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdagy1o2e47/.iambic/repos/resources/aws/iam/role/multi_account/iambi
+    c_test_role.yaml
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:policy_document // s3-access
+    │       └── inline_policies:
+    │           +(Add)
+    │           [
+    │             [
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "s3:GetObject"
+    │                 ],
+    │                 "Resource": 
+    │           "arn:aws:s3:::awsexamplebucket1-iambic_test_spoke_account_1/*"
+    │               },
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "s3:DeleteObject"
+    │                 ],
+    │                 "Resource": 
+    │           "arn:aws:s3:::awsexamplebucket1-iambic_test_spoke_account_1/*"
+    │               },
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "s3:ListAllMyBuckets"
+    │                 ],
+    │                 "Resource": "*"
+    │               }
+    │             ]
+    │           ]
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:policy_document // s3-access
+    │       └── inline_policies:
+    │           +(Add)
+    │           [
+    │             [
+    │               {
+    │                 "Effect": "Allow",
+    │                 "Action": [
+    │                   "s3:GetObject"
+    │                 ],
+    │                 "Resource": 
+    │           "arn:aws:s3:::awsexamplebucket1-iambic_test_spoke_account_3/*"
+    │               }
+    │             ]
+    │           ]
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:policy_document // s3-access
+    └── iambic_test_spoke_account_2 - (192455039954)
+        └── aws:policy_document // s3-access
+            └── inline_policies:
+                +(Add)
+                [
+                  [
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "s3:GetObject"
+                      ],
+                      "Resource": 
+                "arn:aws:s3:::awsexamplebucket1-iambic_test_spoke_account_2/*"
+                    },
+                    {
+                      "Effect": "Allow",
+                      "Action": [
+                        "s3:ListAllMyBuckets"
+                      ],
+                      "Resource": "*"
+                    }
+                  ]
+                ]
+Delete
+└── /tmp/lambdagy1o2e47/.iambic/repos/resources/aws/iam/role/multi_account/iambi
+    c_test_role.yaml
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:policy_document // spoke-acct-policy
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:policy_document // spoke-acct-policy
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:policy_document // spoke-acct-policy
+    └── iambic_test_spoke_account_2 - (192455039954)
+        └── aws:policy_document // spoke-acct-policy
+Attach
+└── /tmp/lambdagy1o2e47/.iambic/repos/resources/aws/iam/role/multi_account/iambi
+    c_test_role.yaml
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   ├── aws:policy_document // 
+    │   │   arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/SupportUser
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   ├── aws:policy_document // 
+    │   │   arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/SupportUser
+    ├── iambic_test_org_account - (580605962305)
+    │   ├── aws:policy_document // 
+    │   │   arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/SupportUser
+    └── iambic_test_spoke_account_2 - (192455039954)
+        ├── aws:policy_document // 
+        │   arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
+        └── aws:policy_document // 
+            arn:aws:iam::aws:policy/job-function/SupportUser
+Detach
+└── /tmp/lambdagy1o2e47/.iambic/repos/resources/aws/iam/role/multi_account/iambi
+    c_test_role.yaml
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:policy_document // 
+    │       arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
+    └── iambic_test_spoke_account_2 - (192455039954)
+        └── aws:policy_document // 
+            arn:aws:iam::aws:policy/job-function/ViewOnlyAccess
