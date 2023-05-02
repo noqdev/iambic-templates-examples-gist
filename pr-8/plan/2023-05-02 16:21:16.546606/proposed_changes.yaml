@@ -1,0 +1,33 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambda4b7fbsqp/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/test_detect_role.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:policy_document // testing
+            └── inline_policies:
+                +(Add)
+                [
+                  [
+                    {
+                      "Effect": "Deny",
+                      "Action": [
+                        "sqs:GetQueueAttributes"
+                      ],
+                      "Resource": 
+                "arn:aws:sqs:us-east-1:442632209887:fakequeue",
+                      "Condition": {
+                        "IAM:ResourceTag/status": "terminate"
+                      }
+                    }
+                  ]
+                ]
