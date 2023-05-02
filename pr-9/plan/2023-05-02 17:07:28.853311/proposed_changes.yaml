@@ -1,0 +1,22 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 4 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambda8zctlwa_/.iambic/repos/resources/aws/iam/managed_policy/all_accou
+    nts/base_s3_pii_deny.yaml
+    ├── iambic_test_spoke_account_3 - (333972133479)
+    │   └── aws:iam:managed_policy:properties // deny-pii-access
+    ├── iambic_test_spoke_account_1 - (442632209887)
+    │   └── aws:iam:managed_policy:properties // deny-pii-access
+    ├── iambic_test_org_account - (580605962305)
+    │   └── aws:iam:managed_policy:properties // deny-pii-access
+    └── iambic_test_spoke_account_2 - (192455039954)
+        └── aws:iam:managed_policy:properties // deny-pii-access
