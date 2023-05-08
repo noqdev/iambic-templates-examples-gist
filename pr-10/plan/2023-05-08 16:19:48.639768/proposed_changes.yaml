@@ -1,0 +1,33 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 2 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Attach
+├── /tmp/lambda5y36uwlt/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+│   ccount_1/iambic_image_builder.yaml
+│   └── iambic_test_spoke_account_1 - (442632209887)
+│       └── aws:iam:role // iambic_image_builder
+│           └── tags:
+│               +(Add)
+│               [
+│                 "purpose",
+│                 "build test images"
+│               ]
+└── /tmp/lambda5y36uwlt/.iambic/repos/resources/aws/iam/managed_policy/iambic_te
+    st_spoke_account_1/update-role-description.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:policy_document // 
+            arn:aws:iam::442632209887:policy/update-role-description
+            └── tags:
+                +(Add)
+                [
+                  "cost_center",
+                  "engineering"
+                ]
