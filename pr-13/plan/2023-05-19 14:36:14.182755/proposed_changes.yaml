@@ -1,0 +1,16 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdazqjejlpm/.iambic/repos/resources/aws/identity_center/engineering.
+    yaml
+    └── iambic_test_org_account - (580605962305)
+        └── aws:identity_center:permission_set // engineering
