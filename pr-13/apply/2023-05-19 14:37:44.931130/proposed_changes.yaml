@@ -1,0 +1,68 @@
+IAMbic Summary
+
+Change Detection
+
+* 3 distinct actions.
+* 3 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdarf1alhzq/.iambic/repos/resources/aws/identity_center/engineering.
+    yaml
+    └── iambic_test_org_account - (580605962305)
+        ├── arn:aws:iam::aws:group // engineering
+        ├── arn:aws:iam::aws:group // engineering
+        ├── arn:aws:iam::aws:group // engineering
+        ├── arn:aws:iam::aws:group // engineering
+        ├── aws:identity_center:permission_set // 
+        │   arn:aws:sso:::permissionSet/ssoins-7223ea5a198e791c/ps-546775ee9d1f1
+        │   569
+        │   └── permissions_boundary:
+        │       +(Add)
+        │       [
+        │         {
+        │           "Path": "/",
+        │           "Name": "base_permission_boundary"
+        │         }
+        │       ]
+        └── aws:identity_center:permission_set // engineering
+Update
+└── /tmp/lambdarf1alhzq/.iambic/repos/resources/aws/identity_center/engineering.
+    yaml
+    └── iambic_test_org_account - (580605962305)
+        └── aws:identity_center:permission_set // 
+            arn:aws:sso:::permissionSet/ssoins-7223ea5a198e791c/ps-546775ee9d1f1
+            569
+            └── inline_policy_document:
+                +(Add)
+                [
+                  [
+                    {
+                      "Effect": "Deny",
+                      "Action": [
+                        "ec2:list*"
+                      ],
+                      "Resource": [
+                        "*"
+                      ]
+                    },
+                    {
+                      "Effect": "Deny",
+                      "Action": [
+                        "ec2:list*"
+                      ],
+                      "Resource": [
+                        "*"
+                      ]
+                    }
+                  ]
+                ]
+Attach
+└── /tmp/lambdarf1alhzq/.iambic/repos/resources/aws/identity_center/engineering.
+    yaml
+    └── iambic_test_org_account - (580605962305)
+        ├── aws:policy_document // /base_deny
+        └── aws:policy_document // arn:aws:iam::aws:policy/AWSHealthFullAccess
