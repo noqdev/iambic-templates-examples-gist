@@ -1,0 +1,19 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Delete
+└── /tmp/lambdaledobv6c/.iambic/repos/resources/google_workspace/group/iambic.or
+    g/iambic_testing_group_jonathan.yaml
+    └── iambic.org
+        └── google:group // iambic-testing-group-jonathan@iambic.org
+            └── group:
+                -(Remove)
+                "iambic-testing-group-jonathan"
