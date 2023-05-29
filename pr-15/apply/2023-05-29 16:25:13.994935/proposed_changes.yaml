@@ -1,0 +1,65 @@
+IAMbic Summary
+
+Change Detection
+
+* 2 distinct actions.
+* 8 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_imdsv1.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // PreventIMDSV1
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_root_login.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // DontRootMe
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/restrict_regions.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // RestrictRegions
+└── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+    t_org_account/prevent_disable_security_services.yaml
+    └── iambic_test_org_account - (580605962305)
+        └── aws:iam:scp_policy:properties // PreventDisableSecurityServices
+Attach
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_imdsv1.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // None
+│           └── targets:
+│               +(Add)
+│               [
+│                 "r-dea5"
+│               ]
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/restrict_regions.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // None
+│           └── targets:
+│               +(Add)
+│               [
+│                 "r-dea5"
+│               ]
+├── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_root_login.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // None
+│           └── targets:
+│               +(Add)
+│               [
+│                 "r-dea5"
+│               ]
+└── /tmp/lambda4jrkxxp6/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+    t_org_account/prevent_disable_security_services.yaml
+    └── iambic_test_org_account - (580605962305)
+        └── aws:iam:scp_policy:properties // None
+            └── targets:
+                +(Add)
+                [
+                  "r-dea5"
+                ]
