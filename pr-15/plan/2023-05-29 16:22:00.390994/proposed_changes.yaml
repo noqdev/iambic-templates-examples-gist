@@ -1,0 +1,28 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 4 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+├── /tmp/lambda2sgu9krk/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_root_login.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // DontRootMe
+├── /tmp/lambda2sgu9krk/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_disable_security_services.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // PreventDisableSecurityServices
+├── /tmp/lambda2sgu9krk/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+│   t_org_account/prevent_imdsv1.yaml
+│   └── iambic_test_org_account - (580605962305)
+│       └── aws:iam:scp_policy:properties // PreventIMDSV1
+└── /tmp/lambda2sgu9krk/.iambic/repos/resources/aws/organizations/scp/iambic_tes
+    t_org_account/restrict_regions.yaml
+    └── iambic_test_org_account - (580605962305)
+        └── aws:iam:scp_policy:properties // RestrictRegions
