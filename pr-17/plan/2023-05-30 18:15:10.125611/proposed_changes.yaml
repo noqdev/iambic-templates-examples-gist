@@ -1,0 +1,21 @@
+IAMbic Summary
+
+Change Detection
+
+* 2 distinct actions.
+* 2 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdau6vejk9u/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/test_detect_role_2.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:iam:role // test_detect_role_2
+Delete
+└── /tmp/lambdau6vejk9u/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/test_detect_role.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:iam:role // test_detect_role
