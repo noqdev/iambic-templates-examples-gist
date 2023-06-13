@@ -1,0 +1,16 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Update
+└── /tmp/lambdahcqkvcat/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/iambic_image_builder.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:iam:role // iambic_image_builder
