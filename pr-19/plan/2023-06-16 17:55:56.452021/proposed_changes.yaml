@@ -1,0 +1,16 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambda8whkxc_q/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/iam_grammar/policy_id.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:iam:role // iam_grammar_policy_id
