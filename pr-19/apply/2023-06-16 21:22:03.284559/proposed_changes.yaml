@@ -1,0 +1,30 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 distinct actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+Exceptions
+* 0 exceptions were recorded.
+IAMbic Change Details
+Create
+└── /tmp/lambdacu0jtr6l/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/iam_grammar/policy_id.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        ├── aws:iam:role // iam_grammar_policy_id
+        └── aws:policy_document // demo
+            └── inline_policies:
+                +(Add)
+                [
+                  "2012-10-17",
+                  [
+                    {
+                      "Effect": "Deny",
+                      "Action": "s3:GetObject",
+                      "Resource": "arn:aws:s3:::fake-bucket/demo"
+                    }
+                  ],
+                  "fake-uuid-4"
+                ]
