@@ -1,0 +1,121 @@
+[
+  {
+    "resource_id": "iambic_test_14",
+    "version": "0",
+    "id": "68b0a7d2-d84e-0e27-16c1-ca5a4760c291",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "580605962305",
+    "time": "2023-08-21T18:41:12Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAYOLWP5BA4ZBAQVUNY:curtis@noq.dev",
+        "arn": "arn:aws:sts::580605962305:assumed-role/iambic_test_org_account_admin/curtis@noq.dev",
+        "accountId": "580605962305",
+        "accessKeyId": "ASIAYOLWP5BAVZNPCWLE",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAYOLWP5BA4ZBAQVUNY",
+            "arn": "arn:aws:iam::580605962305:role/iambic_test_org_account_admin",
+            "accountId": "580605962305",
+            "userName": "iambic_test_org_account_admin"
+          },
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2023-08-21T18:35:45Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2023-08-21T18:41:12Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "TagUser",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "68.4.188.30",
+      "userAgent": "AWS Internal",
+      "requestParameters": {
+        "userName": "iambic_test_14",
+        "tags": [
+          {
+            "key": "AKIAYOLWP5BAT4KEVOWQ",
+            "value": "Pen testing"
+          }
+        ]
+      },
+      "responseElements": null,
+      "requestID": "521e2ab5-de4b-4e72-9e65-f284f342799d",
+      "eventID": "2af4b3ce-a2bc-4555-8b84-c16b2f5bae84",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "580605962305",
+      "eventCategory": "Management",
+      "sessionCredentialFromConsole": "true"
+    }
+  },
+  {
+    "resource_id": "iambic_test_14",
+    "version": "0",
+    "id": "db49470d-27fe-f432-92e9-d0e7fa173462",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "580605962305",
+    "time": "2023-08-21T18:41:12Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAYOLWP5BA4ZBAQVUNY:curtis@noq.dev",
+        "arn": "arn:aws:sts::580605962305:assumed-role/iambic_test_org_account_admin/curtis@noq.dev",
+        "accountId": "580605962305",
+        "accessKeyId": "ASIAYOLWP5BAVZNPCWLE",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAYOLWP5BA4ZBAQVUNY",
+            "arn": "arn:aws:iam::580605962305:role/iambic_test_org_account_admin",
+            "accountId": "580605962305",
+            "userName": "iambic_test_org_account_admin"
+          },
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2023-08-21T18:35:45Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2023-08-21T18:41:12Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "68.4.188.30",
+      "userAgent": "AWS Internal",
+      "requestParameters": {
+        "userName": "iambic_test_14"
+      },
+      "responseElements": {
+        "accessKey": {
+          "accessKeyId": "AKIAYOLWP5BAT4KEVOWQ",
+          "status": "Active",
+          "userName": "iambic_test_14",
+          "createDate": "Aug 21, 2023 6:41:12 PM"
+        }
+      },
+      "requestID": "dec8ea3c-6901-418c-8ff7-1aa346e806cb",
+      "eventID": "236cf7be-6219-4d15-8f1d-c746c1d85d4f",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "580605962305",
+      "eventCategory": "Management",
+      "sessionCredentialFromConsole": "true"
+    }
+  }
+]
