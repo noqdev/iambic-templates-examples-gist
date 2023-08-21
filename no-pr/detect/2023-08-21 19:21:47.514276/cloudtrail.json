@@ -1,0 +1,120 @@
+[
+  {
+    "resource_id": "ThirdPartySaaSRole",
+    "version": "0",
+    "id": "db144d5b-8ef1-5315-fc5b-aa7570759f54",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "580605962305",
+    "time": "2023-08-21T19:18:43Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAYOLWP5BA4ZBAQVUNY:curtis@noq.dev",
+        "arn": "arn:aws:sts::580605962305:assumed-role/iambic_test_org_account_admin/curtis@noq.dev",
+        "accountId": "580605962305",
+        "accessKeyId": "ASIAYOLWP5BAVZNPCWLE",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAYOLWP5BA4ZBAQVUNY",
+            "arn": "arn:aws:iam::580605962305:role/iambic_test_org_account_admin",
+            "accountId": "580605962305",
+            "userName": "iambic_test_org_account_admin"
+          },
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2023-08-21T18:35:45Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2023-08-21T19:18:43Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "68.4.188.30",
+      "userAgent": "AWS Internal",
+      "requestParameters": {
+        "roleName": "ThirdPartySaaSRole",
+        "policyArn": "arn:aws:iam::aws:policy/IAMFullAccess"
+      },
+      "responseElements": null,
+      "requestID": "2c4aa6fd-ee17-4fb0-8bfa-bdd906e67ef5",
+      "eventID": "d001020c-cfe8-45e7-b169-ec24e15f80f0",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "580605962305",
+      "eventCategory": "Management",
+      "sessionCredentialFromConsole": "true"
+    }
+  },
+  {
+    "resource_id": "ThirdPartySaaSRole",
+    "version": "0",
+    "id": "8fa50521-df87-3ecd-ce51-93141bfea2a1",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.iam",
+    "account": "580605962305",
+    "time": "2023-08-21T19:18:42Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAYOLWP5BA4ZBAQVUNY:curtis@noq.dev",
+        "arn": "arn:aws:sts::580605962305:assumed-role/iambic_test_org_account_admin/curtis@noq.dev",
+        "accountId": "580605962305",
+        "accessKeyId": "ASIAYOLWP5BAVZNPCWLE",
+        "sessionContext": {
+          "sessionIssuer": {
+            "type": "Role",
+            "principalId": "AROAYOLWP5BA4ZBAQVUNY",
+            "arn": "arn:aws:iam::580605962305:role/iambic_test_org_account_admin",
+            "accountId": "580605962305",
+            "userName": "iambic_test_org_account_admin"
+          },
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2023-08-21T18:35:45Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2023-08-21T19:18:42Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "68.4.188.30",
+      "userAgent": "AWS Internal",
+      "requestParameters": {
+        "roleName": "ThirdPartySaaSRole",
+        "assumeRolePolicyDocument": "{\n\t\"Version\": \"2012-10-17\",\n\t\"Statement\": [\n\t\t{\n\t\t\t\"Effect\": \"Allow\",\n\t\t\t\"Principal\": {\n\t\t\t    \"AWS\": \"arn:aws:iam::972417093400:root\"\n\t\t\t},\n\t\t\t\"Action\": \"sts:AssumeRole\"\n\t\t}\n\t]\n}",
+        "description": ""
+      },
+      "responseElements": {
+        "role": {
+          "path": "/",
+          "roleName": "ThirdPartySaaSRole",
+          "roleId": "AROAYOLWP5BAWQNWWMUCN",
+          "arn": "arn:aws:iam::580605962305:role/ThirdPartySaaSRole",
+          "createDate": "Aug 21, 2023 7:18:42 PM",
+          "assumeRolePolicyDocument": "%7B%0A%09%22Version%22%3A%20%222012-10-17%22%2C%0A%09%22Statement%22%3A%20%5B%0A%09%09%7B%0A%09%09%09%22Effect%22%3A%20%22Allow%22%2C%0A%09%09%09%22Principal%22%3A%20%7B%0A%09%09%09%20%20%20%20%22AWS%22%3A%20%22arn%3Aaws%3Aiam%3A%3A972417093400%3Aroot%22%0A%09%09%09%7D%2C%0A%09%09%09%22Action%22%3A%20%22sts%3AAssumeRole%22%0A%09%09%7D%0A%09%5D%0A%7D"
+        }
+      },
+      "requestID": "1b6b8d9d-d598-48b2-9950-7cb96877c4d9",
+      "eventID": "b100d730-f659-4f55-9692-b27217407c29",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "580605962305",
+      "eventCategory": "Management",
+      "sessionCredentialFromConsole": "true"
+    }
+  }
+]
