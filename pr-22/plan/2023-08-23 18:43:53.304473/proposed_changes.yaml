@@ -1,0 +1,19 @@
+IAMbic Summary
+
+Change Detection
+
+* 1 Update actions.
+* 1 templates with changes.
+* 1 accounts affected.
+
+IAMbic Change Details
+Update
+└── /tmp/lambdak84xytsi/.iambic/repos/resources/aws/iam/role/iambic_test_spoke_a
+    ccount_1/iambic_image_builder.yaml
+    └── iambic_test_spoke_account_1 - (442632209887)
+        └── aws:iam:role // iambic_image_builder
+            └── Description:
+                +(Add)
+                [
+                  "build iambic image and upload to public ECR - bar21"
+                ]
